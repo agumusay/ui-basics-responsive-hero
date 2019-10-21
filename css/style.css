@@ -1,0 +1,84 @@
+html{
+    box-sizing: border-box;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 62.5%;
+}
+
+main {
+    display: flex;
+    width: 80vw;
+    height: 100vh;
+    margin: 0 auto;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column-reverse;
+    font-size: 1rem;
+}
+
+
+
+section{
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.hero-text {
+    flex-direction: column;
+    align-items: center;
+}
+
+.hero-img{
+    max-width: 50%;
+    border-top-left-radius: 40%;
+    border-top-right-radius: 40%;
+    border-bottom-left-radius: 40%;
+    border-bottom-right-radius: 50%;
+}
+
+h1 {
+    color: rgb(0, 123, 139);
+    font-size: 2.2rem;
+}
+
+h3, p {
+    color: hotpink;
+}
+button {
+    background-color: hotpink;
+    border: none;
+    border-radius: 3px;
+    height: 2rem;
+    width: 6rem;
+    color: white;
+    font-weight: bold;
+}
+
+span {
+    color: rgb(0, 123, 139);
+    font-size: 1rem;
+}
+
+@media (min-width: 1200px) {
+    main{
+        flex-direction: row;
+    }
+    section {
+        align-items: baseline;
+        justify-content: baseline;
+        text-align: start;
+    }
+    .hero-text {
+        align-items: flex-start;
+        justify-content: baseline;
+    }
+
+    .hero-img{
+        max-width: 600px;
+    }
+  html {
+      font-size: 20px;
+  }
+    
+}
